@@ -19,7 +19,28 @@ public class GameCanvas extends JPanel {
     public void paint(Graphics g) {
         super.paint(g);
         g.drawImage(background.image, background.x, background.y, null);
-        g.drawImage(player1.player,player1.x,player1.y,null);
+        g.drawImage(player1.image,player1.x,player1.y,null);
+    }
+    public void runAll(){
+        //
+        this.player1.run();
+        this.background.run();
+    }
+    public void rendAll(){
+
+        this.repaint();//~paint
+    }
+    public void gameLoop(){
+
+        long lastTimeRun =0;
+        while (true){
+            long currentTime = System.currentTimeMillis();
+            if (currentTime - lastTimeRun>1000/60){
+                runAll();//logic game
+                rendAll();// hien thi game
+                lastTimeRun = currentTime;
+            }
+        }
     }
 
 }
