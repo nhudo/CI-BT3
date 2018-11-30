@@ -1,4 +1,3 @@
-import org.omg.CORBA.PUBLIC_MEMBER;
 
 import javax.swing.*;
 import java.awt.event.KeyAdapter;
@@ -14,16 +13,16 @@ public class GameWindow extends JFrame {
     public GameWindow() {
 
         this.setTitle("MU");
-        this.setSize(800, 600);
+//        this.setSize(800, 600);
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        this.setResizable(false);
+       this.setResizable(false);
         this.addKeyListener(new KeyAdapter() {
             @Override
             public void keyPressed(KeyEvent e) {
-               if (e.getKeyCode()==KeyEvent.VK_S){
+               if (e.getKeyCode()==KeyEvent.VK_W){
                    isUpPress  = true;
                }
-               if (e.getKeyCode() == KeyEvent.VK_W){
+               if (e.getKeyCode() == KeyEvent.VK_S){
                    isDowPress = true;
                }
                if (e.getKeyCode() == KeyEvent.VK_A){
