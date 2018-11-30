@@ -48,6 +48,7 @@ public class GameWindow extends JFrame {
                 if (e.getKeyCode() == KeyEvent.VK_D){
                     isRightPress = false;
                 }
+                //aofdxgfds
             }
         });
     }
