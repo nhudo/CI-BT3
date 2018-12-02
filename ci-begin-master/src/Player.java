@@ -9,7 +9,7 @@ public class Player {
     Vector2D position;
 
     public Player() {
-        this.image = SpriteUtils.loadImage("D:\\c# cb\\CI-BT2\\ci-begin-master\\assets\\images\\players\\straight\\0.png");
+        this.image = SpriteUtils.loadImage("D:\\IntelliJ\\CI-BT2\\ci-begin-master\\assets\\images\\players\\straight\\1.png");
 //        this.x = 300;
 //        this.y = 400;
         this.position = new Vector2D(200,300);

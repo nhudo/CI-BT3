@@ -7,7 +7,7 @@ public class Background {
     Vector2D position;
 
     public Background() {
-        this.image = SpriteUtils.loadImage("D:\\c# cb\\CI-BT2\\ci-begin-master\\assets\\images\\background\\0.png");
+        this.image = SpriteUtils.loadImage("D:\\IntelliJ\\CI-BT2\\ci-begin-master\\assets\\images\\background\\0.png");
         this.position = new Vector2D(0,Setting.SCREEN_HEIGHT-this.image.getHeight());
 
 
