@@ -18,8 +18,8 @@ public class GameCanvas extends JPanel {
     @Override
     public void paint(Graphics g) {
         super.paint(g);
-        g.drawImage(background.image, background.x, background.y, null);
-        g.drawImage(player1.image,player1.x,player1.y,null);
+        g.drawImage(background.image,(int)background.position.x,(int)background.position.y, null);
+        g.drawImage(player1.image,(int)player1.position.x,(int)player1.position.y,null);
     }
     public void runAll(){
         //

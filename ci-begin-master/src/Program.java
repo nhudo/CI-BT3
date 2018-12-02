@@ -9,7 +9,7 @@ public class Program {
         GameWindow gw = new GameWindow();
         GameCanvas gc = new GameCanvas();
 
-        gc.setPreferredSize(new Dimension(800,600));
+        gc.setPreferredSize(new Dimension(Setting.SCREEN_WIDTH,Setting.SCREEN_HEIGHT));
         gw.add(gc);
         gw.pack();
         gw.setVisible(true);
